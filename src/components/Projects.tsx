@@ -18,16 +18,18 @@ export default function Projects() {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1 }}
             key={project.id}
-            className="relative flex flex-col lg:flex-row lg:items-center gap-4 lg:px-24 mb-5"
+            className="relative flex flex-col lg:flex-row lg:items-center gap-4 lg:px-24 mb-8"
           >
             <div className="relative group">
+              <div className=" flex items-center justify-center " >
               <motion.img
                 whileHover={{ scale: 1 }}
                 src={project.image}
                 alt={project.name}
-                className="w-full h-auto object-cover rounded-3xl transition duration-500 group-hover:blur-sm"
+                className="w-full h-auto object-cover rounded-3xl  transition duration-500 group-hover:blur-sm"
                 style={{ width: "300px", height: "200px" }}
               />
+              </div>
               <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
