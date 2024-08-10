@@ -28,6 +28,11 @@ export default function Hero() {
           />
         </div>
       </div>
+      <a href="https://res.cloudinary.com/ddldrbyl2/image/upload/v1723300047/new-resume_ht2sbh.pdf" target="_blank">
+        <button className="rounded bg-black text-white p-4 m-2 font-bold">
+          Download CV
+        </button>
+      </a>
     </section>
   );
 }
