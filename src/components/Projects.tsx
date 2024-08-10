@@ -29,10 +29,11 @@ export default function Projects() {
                 style={{ width: "300px", height: "200px" }}
               />
               <motion.div
-              initial={{ opacity: 0}}
-              transition={{ duration: 0.5 }}
-              whileHover={{ opacity: 1 }}
-              className="absolute inset-0 flex items-center justify-center  gap-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ opacity: 1 }}
+                className="absolute inset-0 flex items-center justify-center  gap-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              >
                 <a
                   href={project.liveCodeLink}
                   target="_blank"
@@ -70,7 +71,7 @@ const PROJECTS = [
     description:
       "This application provides users with an interactive platform to submit and browse public reviews. The application showcases a comprehensive list of all submitted reviews, allowing users to access a diverse range of public opinions and feedback. The app includes a robust filter functionality that enables users to streamline their review search process by topics.",
     image:
-      "https://images.unsplash.com/photo-1660739675626-bf7876d554cb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303518/Screenshot_2024-08-10_205308_dtygy1.png",
     githubLink: "https://github.com/shivPratap007/public-review",
   },
   {
@@ -80,7 +81,7 @@ const PROJECTS = [
     description:
       "The event finder application leverages Next.js server-side rendering capabilities to ensure fast initial page loads and improved SEO performance. The application features intuitive and responsive user interfaces, providing users with a seamless browsing experience across various devices. This architecture enhances performance and security by centralizing backend operations.",
     image:
-      "https://images.unsplash.com/photo-1660739675626-bf7876d554cb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303518/Screenshot_2024-08-10_205245_unaobb.png",
     githubLink: "https://github.com/shivPratap007",
   },
   {
@@ -90,7 +91,7 @@ const PROJECTS = [
     description:
       "The Task Management Application is designed to help users efficiently manage and track their daily tasks with ease. It allows you to quickly add tasks to your to-do list and mark them as complete once they are done. The application features a one-click option to mark all tasks as complete or incomplete, making it simple to manage large lists.",
     image:
-      "https://images.unsplash.com/photo-1660739675626-bf7876d554cb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303517/Screenshot_2024-08-10_205326_dwe3ex.png",
     githubLink: "https://github.com/shivPratap007/todo-tracker",
   },
 ];
