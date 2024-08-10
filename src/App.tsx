@@ -1,4 +1,5 @@
 import Bio from "./components/Bio"
+import ContactForm from "./components/ContactForm"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
@@ -17,6 +18,7 @@ function App() {
         <Projects/>
         <Bio/>
         <Skills/>
+        <ContactForm/>
       </div>
     </div>
     </>
