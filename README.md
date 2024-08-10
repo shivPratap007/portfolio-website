@@ -1,6 +1,6 @@
 # Portfolio Project
 
-## Live Demo
+
 
 
 ## Project Overview
