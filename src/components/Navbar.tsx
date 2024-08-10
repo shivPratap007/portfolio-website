@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import logo from "../assets/logo.png"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +34,14 @@ export default function Navbar() {
       <nav className="fixed left-0 right-0 top-4 z-50 ">
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-black-200 bg-black-20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-between gap-6">
+            <div>
+              <a href="#">
+                <img src={logo} alt="logo"
+                width={30}
+                height={30}
+                 />
+              </a>
+            </div>
             <div>
               <ul className="flex items-center gap-4">
                 {NAVIGATION_LINKS.map((item, index) => (
