@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
@@ -6,11 +7,21 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
   return (
-    <div className="container mx-auto" id="skills">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto"
+      id="skills"
+    >
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">Skills</h2>
       <div className="mx-2 flex flex-col rounded-3xl px-4 py-2 lg:px-20 border border-black-100">
         {SKILLS.map((skills, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1 }}
             key={index}
             className={`py-6 flex items-center justify-between ${
               index !== SKILLS.length - 1 ? "border-b border-black-100" : ""
@@ -23,10 +34,10 @@ export default function Skills() {
             <div className="text-md font-semibold lg:text-xl">
               <span>{skills.experience}</span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

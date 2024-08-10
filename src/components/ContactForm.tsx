@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { FiSend } from "react-icons/fi";
@@ -58,7 +59,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="p-4 lg:w-3/4 mx-auto" id="contact">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 1 }}
+      className="p-4 lg:w-3/4 mx-auto"
+      id="contact"
+    >
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
         Let’s Connect
@@ -121,7 +129,7 @@ export default function ContactForm() {
           </div>
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 
