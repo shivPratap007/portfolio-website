@@ -21,7 +21,7 @@ Welcome to my portfolio project! This application showcases a collection of my w
   - JavaScript
 
 - **Tools:**
-  - GitHub for version control
+  - Git for version control
 
 ## Getting Started
 
@@ -41,4 +41,13 @@ To get started with this project locally, follow these steps:
 4. **Start the Development Server:**
    ```bash
    npm run dev
+## Contributing
 
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
