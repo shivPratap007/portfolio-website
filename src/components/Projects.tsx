@@ -86,12 +86,12 @@ const PROJECTS = [
   },
   {
     id: 3,
-    name: "Task Management Tool",
-    liveCodeLink: "https://todo-tracker-kappa.vercel.app/",
+    name: "Dashboard for management",
+    liveCodeLink: "https://assignment-01-git-main-shivpratap007s-projects.vercel.app/",
     description:
-      "The Task Management Application is designed to help users efficiently manage and track their daily tasks with ease. It allows you to quickly add tasks to your to-do list and mark them as complete once they are done. The application features a one-click option to mark all tasks as complete or incomplete, making it simple to manage large lists.",
+      "The Dashboard Application is designed to help users efficiently manage and track their daily tasks with ease. It allows you to quickly add tasks. You can put different categories and tasks under them you can even customize it as you need.",
     image:
-      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303517/Screenshot_2024-08-10_205326_dwe3ex.png",
-    githubLink: "https://github.com/shivPratap007/todo-tracker",
+      "dashboard.png",
+    githubLink: "https://github.com/shivPratap007/assignment-01/tree/main",
   },
 ];
