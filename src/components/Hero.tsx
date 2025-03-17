@@ -1,4 +1,4 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 const HERO = {
   name: "SHIV PRATAP",
   greet: "Hello there! 👋🏻",
@@ -9,20 +9,29 @@ const HERO = {
 export default function Hero() {
   return (
     <section className="flex min-h-screen flex-wrap items-center">
-      <motion.div className="w-full md:w-1/2"
-      initial={{opacity:0,x:-50}}
-      animate={{opacity:1,x:0}}
-      transition={{duration:1}}
+      <motion.div
+        className="w-full px-40"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
       >
-        <h2 className="my-8 p-2 text-4xl font-bold md:text-5xl lg:text-[7rem]">
+        <h2 className="my-8 p-2 text-4xl font-bold md:text-3xl lg:text-[6rem]">
           {HERO.name}
         </h2>
         <p className="p-2 text-3xl tracking-tighter lg:text-4xl">
           {HERO.greet}
         </p>
         <p className="mb-8 p-2 text-xl">{HERO.description}</p>
+        <a
+          href="https://drive.google.com/file/d/1UHUC6gMDJgZNgjnMWb0CcrEnrWerF-E2/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="rounded bg-black text-white p-4 m-2 font-bold">
+            Download CV
+          </button>
+        </a>
       </motion.div>
-      <motion.div className="w-full md:w-1/2 lg:p-8"
+      {/* <motion.div className="w-full md:w-1/2 lg:p-8"
         initial={{opacity:0,scale:.8}}
         animate={{opacity:1,scale:1}}
         transition={{duration:1}}
@@ -39,12 +48,7 @@ export default function Hero() {
             className="rounded-md"
           />
         </div>
-      </motion.div>
-      <a href="https://res.cloudinary.com/ddldrbyl2/image/upload/v1723300047/new-resume_ht2sbh.pdf" target="_blank">
-        <button className="rounded bg-black text-white p-4 m-2 font-bold">
-          Download CV
-        </button>
-      </a>
+      </motion.div> */}
     </section>
   );
 }

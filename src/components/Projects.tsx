@@ -21,14 +21,14 @@ export default function Projects() {
             className="relative flex flex-col lg:flex-row lg:items-center gap-4 lg:px-24 mb-8"
           >
             <div className="relative group">
-              <div className=" flex items-center justify-center " >
-              <motion.img
-                whileHover={{ scale: 1 }}
-                src={project.image}
-                alt={project.name}
-                className="w-full h-auto object-cover rounded-3xl  transition duration-500 group-hover:blur-sm"
-                style={{ width: "300px", height: "200px" }}
-              />
+              <div className=" flex items-center justify-center ">
+                <motion.img
+                  whileHover={{ scale: 1 }}
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-auto object-cover rounded-3xl  transition duration-500 group-hover:blur-sm"
+                  style={{ width: "300px", height: "200px" }}
+                />
               </div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="rounded-full bg-white px-6 py-2 text-black hover:bg-gray-300"
                 >
-                  Live Code
+                  Live
                 </a>
                 <a
                   href={project.githubLink}
@@ -68,23 +68,21 @@ export default function Projects() {
 const PROJECTS = [
   {
     id: 1,
-    name: "Public Review",
-    liveCodeLink: "https://public-review.vercel.app/",
+    name: "Gift Ginnie",
+    liveCodeLink: "https://giftginnie.com",
     description:
-      "This application provides users with an interactive platform to submit and browse public reviews. The application showcases a comprehensive list of all submitted reviews, allowing users to access a diverse range of public opinions and feedback. The app includes a robust filter functionality that enables users to streamline their review search process by topics.",
-    image:
-      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303518/Screenshot_2024-08-10_205308_dtygy1.png",
-    githubLink: "https://github.com/shivPratap007/public-review",
+      "This is a ecommerce application which is being used in the real world. You can buy the products from here according to the need. It is build using react so it leverages the single page application features of react and with the help or react query the features of caching is also present in this.",
+    image: "giftginnie.png",
+    githubLink: "https://github.com/shivPratap007",
   },
   {
     id: 2,
-    name: "Event Finder",
-    liveCodeLink: "https://event-finder-three.vercel.app/events/all?page=1",
+    name: "Personal Finance",
+    liveCodeLink: "https://personal-finance-2yqk.vercel.app/transactions",
     description:
-      "The event finder application leverages Next.js server-side rendering capabilities to ensure fast initial page loads and improved SEO performance. The application features intuitive and responsive user interfaces, providing users with a seamless browsing experience across various devices. This architecture enhances performance and security by centralizing backend operations.",
-    image:
-      "https://res.cloudinary.com/ddldrbyl2/image/upload/v1723303518/Screenshot_2024-08-10_205245_unaobb.png",
-    githubLink: "https://github.com/shivPratap007",
+      "The personal finance application leverages Next.js server-side rendering capabilities to ensure fast initial page loads and improved SEO performance. The application features intuitive and responsive user interfaces, providing users with a seamless browsing experience across various devices. This architecture enhances performance and security by centralizing backend operations.",
+    image: "personalFinance.png",
+    githubLink: "https://github.com/shivPratap007/Personal_Finance/",
   },
   {
     id: 3,
